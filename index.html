@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/header-navbar.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/33cd502954.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu" id="js-menu">
+                <li class="logo"><a href="#"><img class="site-logo" src="images/site-logo.png" alt="site-logo" width="116" height="57"></a></li>
+                
+                <li class="divider1"></li>
+                
+                <li class="item"><a href="#">Главная</a></li>
+                <li class="item"><a href="#">О нас</a></li>
+                <li class="item"><a href="#">Вопрос/Ответ</a></li>
+                <li class="item"><a href="#">Контакты</a></li>
+                
+                <li class="divider"></li>
+                
+                <li class="button"><a href="#">Войти</a></li>
+                <li class="button secondary"><a href="#">Регистрация</a></li>
+                <li class="toggle"><a href="#" id="js-navbar-toggle"><i class="fas fa-bars"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    
+    
+    <main>
+            <div class="main__inner-wrapper">
+                <div class="main__content-container">
+                    
+                    <div class="main__cta-block">
+                        
+                        <div class="main__cta-block-primary-text">
+                            <h1>Партнерская программа <br> c множеством  инструментов <br> для монетизации любого <br> источника трафика</h1>
+                        </div>
+                        
+                        <div class="main__cta-block-secondary-text">
+                            <p>Мы нацелены на  создание сильного, долгосрочного <br> и успешного сотрудничества с каждым партнером, <br> вознаграждая его работу высокими выплатами</p>
+                            <button>начать зарабатывать</button>
+                        </div>
+                    </div>
+
+                    <div class="main__main-robot-picture">
+                        <img class="main-cta-pic" src="images/main-robot.png" width="662" height="518" alt="main-robot-5plusBet">
+                    </div>
+
+                </div>
+                    <!-- Card Section goes here -->
+                
+                    <div class="cards-cascade">
+                        <div class="card-list">
+                            <div class="card-list__item">
+                                <div class="item__heading"><h3>регистрация</h3></div>
+                                <div class="item__image"><img src="../images/icon-1.png" alt="pic" width="250" height="200"></div>
+                                <div class="item__description"><p>Заполните простую форму <br> онлайн-заявки на <br> регистрацию</p></div>
+                            </div>
+                           
+                            
+                            <div class="card-list__item">
+                                    <div class="item__heading"><h3>продвижение</h3></div>
+                                    <div class="item__image"><img src="../images/icon-2.png" alt="pic" width="250" height="200"></div>
+                                    <div class="item__description"><p>Используйте различные <br> <strong>удобные маркетинговые инструменты</strong></p></div>
+                                </div>
+            
+            
+                            <div class="card-list__item">
+                                    <div class="item__heading"><h3>выплаты</h3></div>
+                                    <div class="item__image"><img src="../images/icon-3.png" alt="pic" width="250" height="200"></div>
+                                    <div class="item__description"><p>Чем <strong>больше трафика</strong> вы привлекаете, тем <strong>больше Ваш доход</strong></p></div>
+                                </div>
+            
+                        </div>
+                    </div>
+            </div>
+    </main>
+    <div id="separator"></div>
+
+    <section>
+        <div class="section__inner-wrapper">
+            <div class="section__content-container">
+                <div class="section__primary-text"><p>выплаты <br> <span>до 60%</span></p></div>
+                <div class="section__secondary-text"><p>
+                        Мы предлагаем простой и понятный план вознаграждения <br>
+                        партнеров. Мы стремимся, чтобы Вы начали зарабатывать в <br>
+                        кратчайшие сроки. После регистрации Вам будут доступны <br>
+                        все наши маркетинговые источники. Вы сможете получать <br>
+                        более  40% с каждого приведенного игрока
+                </p></div>
+                <button>регистрация</button>
+            </div>
+        </div>
+            
+    </section>
+
+
+
+<script>
+$(function() {
+    $(".toggle").on("click", function() {
+        if ($(".item").hasClass("active")) {
+            $(".item").removeClass("active");
+            $(this).find("a").html("<i class='fas fa-bars'></i>");
+        } else {
+            $(".item").addClass("active");
+            $(this).find("a").html("<i class='fas fa-times'></i>");
+        }
+    });
+});</script>
+</body>
+</html>
